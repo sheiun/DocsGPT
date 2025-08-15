@@ -35,6 +35,7 @@ app.config.update(
     CELERY_BROKER_URL=settings.CELERY_BROKER_URL,
     CELERY_RESULT_BACKEND=settings.CELERY_RESULT_BACKEND,
     MONGO_URI=settings.MONGO_URI,
+    MAX_CONTENT_LENGTH=1 * 1024 * 1024 * 1024,  # 1GB limit
 )
 celery.config_from_object("application.celeryconfig")
 api.init_app(app)

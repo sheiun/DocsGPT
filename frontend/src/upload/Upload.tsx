@@ -483,7 +483,7 @@ function Upload({
     onDragEnter: doNothing,
     onDragOver: doNothing,
     onDragLeave: doNothing,
-    maxSize: 25000000,
+    maxSize: 1000000000,
     accept: {
       'application/pdf': ['.pdf'],
       'text/plain': ['.txt'],
